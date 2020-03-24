@@ -8,6 +8,7 @@ function luckyNumbers ($matrix) {
   $maxColIndex = array_search(max($colSum), $colSum);
   
   $tranMatrix = transpose($matrix);
+  // $tranMatrix = array_map(null, ...$matrix);
   $rowSum = array_map('sumElem', $tranMatrix);
   $minRowIndex = array_search(min($rowSum), $rowSum);
 
